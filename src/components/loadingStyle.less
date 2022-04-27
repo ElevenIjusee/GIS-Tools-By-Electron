@@ -1,0 +1,137 @@
+.complete {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  max-width: 20em;
+}
+
+.cat {
+  position: relative;
+  width: 200px;
+  max-width: 20em;
+  overflow: hidden;
+  background-color: rgba(230, 220, 220, 0);
+}
+.cat::before {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.catHead,
+.catTail,
+.catBody {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-animation: rotating 2.79s cubic-bezier(0.65, 0.54, 0.12, 0.93)
+    infinite;
+  animation: rotating 2.79s cubic-bezier(0.65, 0.54, 0.12, 0.93) infinite;
+}
+.catHead::before,
+.catTail::before,
+.catBody::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-image: url('../../public/image/loading2.png');
+}
+
+.catHead::before {
+  top: 0;
+  right: 0;
+  background-position: 100% 0%;
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.catTail {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.catTail::before {
+  left: 0;
+  bottom: 0;
+  background-position: 0% 100%;
+  -webkit-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+
+.catBody {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.catBody:nth-of-type(2) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.catBody::before {
+  right: 0;
+  bottom: 0;
+  background-position: 100% 100%;
+  -webkit-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+  }
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+  }
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-flex: 1;
+  flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgba(230, 220, 220, 0.9);
+  position: absolute;
+  width: calc(100% + 150px);
+  height: 100%;
+  left: -150px;
+  z-index: 89;
+  margin-left: 75px;
+  pointer-events: auto;
+}
+
+.outLog {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 3px solid black;
+  width: 400px;
+  height: 40px;
+}

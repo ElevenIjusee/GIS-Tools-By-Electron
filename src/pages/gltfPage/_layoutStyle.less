@@ -1,0 +1,32 @@
+@leftWidth: 150px;
+
+.container {
+  background-color: rgba(256, 256, 256, 0.5);
+  width: 100vw;
+  height: calc(100vh - 100px);
+  box-shadow:  0px 4px 8px rgba(0, 0, 0, 0.9) inset;
+	display: flex;
+	flex-direction: row;
+};
+
+.leftNavigation {
+	width: @leftWidth;
+	height: calc(100% - 100px);
+	display: flex;
+	margin: 20px 20px 150px 20px;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.sideImg {
+	height: calc(100vh - 150px);
+	width: 20px;
+	background-image: url('../../../public/image/777.png');
+	background-repeat: repeat-y;
+	z-index: 9;
+}
+
+.childrenContainer {
+	width: calc(100vw - @leftWidth - 20px);
+	height: 100vh;
+}

@@ -1,0 +1,79 @@
+.toolBarContainer {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  top: 0;
+  user-select: none;
+  pointer-events: auto;
+}
+
+.catImg {
+  position: absolute;
+  right: 0;
+  height: 200px;
+  z-index: 90;
+  user-select: none;
+  pointer-events: none;
+}
+
+.blockDiv {
+  position: absolute;
+  width: 246px;
+  height: 93px;
+  z-index: 91;
+  right: 0;
+  -webkit-app-region: drag;
+  pointer-events: auto;
+}
+
+.toolBar {
+  height: 21px;
+  width: 100%;
+  background-color: #fd6e72;
+  position: absolute;
+  top: 92.5px;
+  z-index: 91;
+  -webkit-app-region: drag;
+}
+.toolBarA {
+  .toolBar();
+  width: calc(100% - 234px);
+  left: 0;
+}
+.toolBarB {
+  .toolBar();
+  width: 20px;
+  right: 0;
+}
+.toolBarC {
+  .toolBar();
+  width: 60px;
+  right: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img {
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-app-region: no-drag;
+}
+.img:hover {
+  filter: grayscale(80%);
+}
+
+.backHomeButton {
+  position: absolute;
+  right: 60px;
+  top: 35px;
+  width: 50px;
+  cursor: pointer;
+  z-index: 99;
+}
+.backHomeButton:hover {
+  transform: translateX(-3px, -3px);
+  filter: drop-shadow(#fff 3px 3px);
+}

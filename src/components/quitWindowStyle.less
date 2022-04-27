@@ -1,0 +1,54 @@
+.quitContainer {
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  left: calc(50% - 250px);
+  top: calc(50% - 60px);
+  background-color: rgba(250, 235, 215, 0.8);
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 41% 42% 11% 10% e('/') 44% 46% 44% 45%;
+  z-index: 999;
+  pointer-events: auto;
+  user-select: none;
+}
+
+.catBox {
+  position: absolute;
+  top: 40px;
+  width: 500px;
+  left: calc(50% - 250px);
+  user-select: none;
+}
+
+.catImg {
+  position: absolute;
+  top: -34px;
+  width: 300px;
+  left: 95px;
+  user-select: none;
+}
+
+.quitButton,
+.cancelButton {
+  width: 60px;
+  border-radius: 3px;
+  position: absolute;
+  top: 100px;
+  cursor: pointer;
+  user-select: none;
+}
+.quitButton:hover {
+  transform: translateY(-3px);
+  filter: drop-shadow(#fff 0 3px);
+}
+.cancelButton:hover {
+  transform: translateY(-3px);
+  filter: drop-shadow(#fff 0 3px);
+}
+
+.quitButton {
+  left: calc(50% - 120px);
+}
+.cancelButton {
+  left: calc(50% + 50px);
+}

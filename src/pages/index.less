@@ -1,0 +1,43 @@
+.container {
+  background-color: rgba(256, 256, 256, 0.5);
+  width: 100vw;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  box-shadow:  0px 4px 8px rgba(0, 0, 0, 0.9) inset;
+}
+
+:global {
+  body {
+    background-color: rgba(256, 256, 256, 0);
+    overflow: hidden;
+  }
+}
+
+.itemContainer{
+  width: 200px;
+  background-color: rgba(250, 235, 215, 0.8);
+  user-select: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3),0 8px 16px rgba(0,0,0,0.5) ;
+  cursor: pointer;
+}
+
+.itemContainer:hover {
+  box-shadow: 15px 15px 5px #888888;
+  background-color: #fd6e72;
+}
+
+.tileCat, .terrainCat, .gltfCat {
+  width: 200px;
+}
+
+.describeText {
+  text-align: center;
+  font-size: 25px;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  background-color: rgb(216,163,139);
+}
