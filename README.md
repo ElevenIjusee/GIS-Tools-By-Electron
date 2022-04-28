@@ -2,7 +2,7 @@
 
 ![图片](./about.gif)
 
-**English | [简体中文](#简介)**
+**English | [简体中文](#jj)**
 
 <span id="Introduction"><font size=5>introduction</font></span>
 
@@ -47,7 +47,7 @@ Completed
 
 **[English](#Introduction) | 简体中文**
 
-<sapn id="简介"><font size=5>简介</font></sapn>
+<sapn id="jj"><font size=5>简介</font></sapn>
 
 使用 electron 构建图形界面的三维工具箱。功能逐步完善中。使用了大量的猫元素，最大的特点是，，，可爱？
 
